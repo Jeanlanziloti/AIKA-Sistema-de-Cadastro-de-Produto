@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Aika</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div id="container"> 
+		<div id="topMenu">
+					<ul>
+							<li><%= link_to 'Home', root_path %></li>
+							<li><%= link_to 'Produtos', registrations_path %></li>
+							<li><%= link_to 'cadastrar', new_registrations_path %></li>	
+					</ul>
+		</div>
+				
+					<div id="header">
+							 
+									<div id="titulo">
+									   <font color="white">
+												<br />
+												<br />		
+												<hr color= white width="100%" size="5" >
+												<h1>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; AIKA</h1>
+												<b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Sistema de Cadastro de Produto</b>
+											</font>
+									</div>
+				 	</div>   	
+	
+						<div id="menu">      
+							<h3> Links</h3>      
+							<ul>             
+									<li><a href="#">teste01</a></li>             
+										<li><a href="#">teste02</a></li>             
+									<li><a href="#">teste03</a></li>          
+									<li><a href="#">teste04</a></li>            
+									<li><a href="#">teste05</a></li>       
+							</ul>  
+						
+		
+							<ul>             
+										<li><a href="#">teste 4</a></li>             
+										<li><a href="#">teste</a></li>             
+											<li><a href="#">teste</a></li>             
+										<li><a href="#">teste</a></li>         
+							</ul>    
+
+						 </div> 
+
+			
+	</div>
+
+	<%= yield %>
+
+<div align="center" id="footer">        
+			Jean Lanziloti 
+</div> 
+
+
+
+</body>
+</html>

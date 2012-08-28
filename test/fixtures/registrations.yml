@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  codigo: MyString
+  descricao: MyString
+  data_cadastro: 2012-08-27
+  preco: 1.5
+  quantidade: MyString
+
+two:
+  codigo: MyString
+  descricao: MyString
+  data_cadastro: 2012-08-27
+  preco: 1.5
+  quantidade: MyString

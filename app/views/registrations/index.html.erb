@@ -1,0 +1,40 @@
+
+<div id="listing">
+		<center>
+			<h1>Lista de Produtos</h1>
+		</center>
+<div id="table">
+				<table>
+					<tr>
+						<th>Codigo</th>
+						<th>Descricao</th>
+						<th>Data cadastro</th>
+						<th>Preco</th>
+						<th>Quantidade</th>
+						<th></th>
+						<th></th>
+						<th></th>
+					</tr>
+
+				<% @registrations.each do |registration| %>
+					<tr>
+						<td><%= registration.codigo %></td>
+						<td><%= registration.descricao %></td>
+						<td><%= registration.data_cadastro %></td>
+						<td><%= registration.preco %></td>
+						<td><%= registration.quantidade %></td>
+						<td><%= link_to 'Show', registration %></td>
+						<td><%= link_to 'Edit', edit_registration_path(registration) %></td>
+						<td><%= link_to 'Destroy', registration, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+					</tr>
+				<% end %>
+				</table>
+  </div>
+
+ <br />
+
+    <%= link_to 'Novo Registro', new_registration_path %>
+</div>  
+
+
+

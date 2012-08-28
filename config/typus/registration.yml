@@ -1,0 +1,8 @@
+# Use the README file as a reference to customize settings.
+
+Registration:
+  fields:
+    default: codigo, descricao, data_cadastro, preco, quantidade
+    form: codigo, descricao, data_cadastro, preco, quantidade
+  relationships: 
+  application: Application
